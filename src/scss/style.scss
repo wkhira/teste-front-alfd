@@ -1,0 +1,206 @@
+/* Colors */
+$lime: #bbe902;
+$white: #f4f4f4;
+$l-grey: #f0f0f0;
+
+/* roboto-condensed-300 - latin */
+@font-face {
+	font-family: 'Roboto Condensed';
+	font-style: normal;
+	font-weight: 300;
+	src: url('../assets/fonts/roboto-condensed-v14-latin-300.eot'); /* IE9 Compat Modes */
+	src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'),
+	url('../assets/fonts/roboto-condensed-v14-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../assets/fonts/roboto-condensed-v14-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+	url('../assets/fonts/roboto-condensed-v14-latin-300.woff') format('woff'), /* Modern Browsers */
+	url('../assets/fonts/roboto-condensed-v14-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+	url('../assets/fonts/roboto-condensed-v14-latin-300.svg#RobotoCondensed') format('svg'); /* Legacy iOS */
+}
+
+/* roboto-condensed-700 - latin */
+@font-face {
+	font-family: 'Roboto Condensed';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../assets/fonts/roboto-condensed-v14-latin-700.eot'); /* IE9 Compat Modes */
+	src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'),
+	url('../assets/fonts/roboto-condensed-v14-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../assets/fonts/roboto-condensed-v14-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+	url('../assets/fonts/roboto-condensed-v14-latin-700.woff') format('woff'), /* Modern Browsers */
+	url('../assets/fonts/roboto-condensed-v14-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+	url('../assets/fonts/roboto-condensed-v14-latin-700.svg#RobotoCondensed') format('svg'); /* Legacy iOS */
+}
+
+@font-face {
+	font-family: 'Arial Black';
+	font-weight: 900;
+	font-style: normal;
+	src: url('../assets/fonts/Arial-Black.eot');
+	src: url('../assets/fonts/Arial-Black.eot?#iefix') format('embedded-opentype'),
+		url('../assets/fonts/Arial-Black.woff2') format('woff2'),
+		url('../assets/fonts/Arial-Black.woff') format('woff'),
+		url('../assets/fonts/Arial-Black.ttf') format('truetype'),
+		url('../assets/fonts/Arial-Black.svg#Arial-Black') format('svg');
+}
+
+html,
+body {
+	height: 100%;
+}
+
+.clearfix {
+	overflow:auto;
+	zoom:1;
+}
+
+.bg-lime {
+	background-color: $lime;
+}
+
+.header-logo {
+	float:left;
+	margin-left: 10px;
+	margin-top: 40px;
+	width: 33.3%;
+}
+
+.header-menu {
+	float:left;
+	width: 33.3%;
+	margin-top: 45px;
+	li {
+		display:inline-block;
+		margin-left: 20px;
+		a {
+			display: block;
+			color: $white;
+			text-decoration:none;
+			font-family: 'Arial', sans-serif;
+			font-size: 1.5em;
+			text-align:center;
+			&:hover {
+				color: $lime;
+			}
+		}
+	}
+}
+
+.header-idioma {
+	position:absolute;
+	right:55px;
+	width: 95px;
+	height: 55px;
+	font-family: 'Roboto Condensed';
+	font-weight: 300;
+	font-size: 1.5em;
+	padding:10px 20px;
+	color:$white;
+	transform: rotate(-90deg);
+	transform-origin: right top;
+	p {
+		margin:0;
+	}
+	a {
+		color:$white;
+		text-decoration:none;
+		text-align: center;
+		&:hover {
+			font-weight: 700;
+		}
+	}
+}
+
+.idioma-ativo {
+	font-weight: 700;
+}
+
+.slider {
+	width:100%;
+}
+
+.slider-card {
+	display:none;
+	width:100%;
+	position:absolute;
+	top:0;
+	left:0;
+	z-index: -1;
+}
+
+.slider-img {
+	img {
+		width: 100%;
+    	height: auto;
+	}
+
+}
+
+.slider-content {
+	position:absolute;
+	//top:40%;
+	top:320px;
+	left:60%;
+	color:$white;
+	width:31%;
+	h2 {
+		font-family: 'Arial Black', 'Arial', sans-serif;
+		font-size: 6em;
+		line-height: 0.75em;
+	}
+	p {
+		font-family: 'Times New Roman', serif;
+		font-size: 1.2em;
+		padding-top: 30px;
+	}
+}
+
+.slider-selector {
+	position:absolute;
+	z-index: 1;
+	width:20%;
+	height:10%;
+	top:630px;
+	left:60%;
+}
+
+.slider-active {
+	right:-999%;
+	display:inline-block;
+}
+
+.slider-offset {
+	left:-999%;
+	display:none;
+	transition: left 1s ease-out;
+}
+
+.btn-selector {
+	float:left;
+	border:none;
+	color: rgba($white, .5);
+	background-color: rgba(0,0,0,0);
+	width:15%;
+	outline:none;
+	&:hover {
+		color: $white;
+	}
+}
+
+.bullet-wrap {
+	float:left;
+	width: 175px;
+	height:100%;
+}
+
+.bullet {
+	float:left;
+	width:12px;
+	height:12px;
+	margin: 30px 22px;
+	background-color: rgba($white, .5);
+	border-radius:50%;
+}
+
+.bullet-active {
+	background-color: $white;
+}
