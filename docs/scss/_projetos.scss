@@ -1,0 +1,65 @@
+.proj-card {
+	margin-top:50px;
+	margin-bottom: 80px;
+	height:500px;
+	text-align: center;
+
+	.titulo-proj {
+		color: $white;
+		font-family: 'Arial Narrow', sans-serif;
+		font-weight:700;
+		font-size: 1.5em;
+		margin-top: 40px;
+	}
+
+	.btn-proj {
+		border:none;
+		background-color:$lime;
+		color:$white;
+		outline:none;
+		padding: 10px 20px;
+		font-family: 'Alwyn', sans-serif;
+		font-size: 1.2em;
+		margin-top:150px;
+
+		&:hover {
+			transform: translateY(1px);
+			background-color: darken($lime, 10%);
+		}
+	}
+
+	.card-desc {
+		color: $white;
+		width: 46%;
+		margin: 0 auto;
+		font-family: 'Arial Narrow', sans-serif;
+		font-size: 1em;
+		margin-top:130px;
+	}
+}
+
+.hover-inativo {
+	opacity: 0;
+	transition: opacity 0.3s ease-out;
+}
+
+%proj {
+	background-size: auto;
+	background-repeat: no-repeat;
+	background-position: top center;
+}
+
+#proj1 {
+	@extend %proj;
+	background-image: url("../assets/img/projeto1.jpg");
+}
+
+#proj2 {
+	@extend %proj;
+	background-image: url("../assets/img/projeto2.jpg");
+}
+
+#proj3 {
+	@extend %proj;
+	background-image: url("../assets/img/projeto3.jpg");
+}

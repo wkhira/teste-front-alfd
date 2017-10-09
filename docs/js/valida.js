@@ -1,0 +1,1 @@
+function validaForm(){$.validate({form:t});var t=$("#cont-form");t.submit(function(a){a.preventDefault(),$.validate({form:t}),t.get(0).reset()})}$(function(){validaForm()});

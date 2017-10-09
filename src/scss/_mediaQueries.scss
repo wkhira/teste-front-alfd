@@ -1,0 +1,178 @@
+@media only screen and (max-width: 1200px) {
+	.proj-card {
+		.titulo-proj {
+			margin-top: 20px;
+		}
+
+		.btn-proj {
+			margin-top:120px;
+		}
+
+		.card-desc {
+			margin-top:100px;
+		}
+	}
+}
+
+@media not all and (max-width: 870px) {
+
+	.menu-abrir {
+		display: none;
+	}
+}
+
+@media only screen and (max-width: 870px) {
+	.header-logo {
+		margin-left:70px;
+	}
+
+	.header-menu {
+		display:inline-block;
+		background-color: $dgrey;
+		padding: 1em;
+		margin: 0;
+		height: 100%;
+		width: 90%;
+		max-width: 180px;
+		position: fixed;
+		z-index: 2;
+		top: 0;
+		left: -999%;
+		transition: left 0.3s ease-out;
+		li {
+			width: 100%;
+			margin: 20px 0;
+			a {
+				font-size: 1.2em;
+			}
+		}
+	}
+
+	.menu-ativo .header-menu {
+		left:0;
+	}
+
+	.menu-ativo:after {
+		content: "";
+		display: block;
+		position: fixed;
+		top: 0;
+		left: 0;
+		bottom: 0;
+		right: 0;
+		background: rgba(0,0,0,0.4);
+	}
+
+	.slider-content {
+		margin-top:20%;
+	}
+
+	.bullet-wrap {
+		float:none;
+		width: 100%;
+	}
+
+	.slider-selector {
+		width:40%;
+	}
+
+	.proj-card {
+		margin-top:0px;
+
+		.titulo-proj {
+			padding-top: 20px;
+		}
+	}
+}
+
+@media only screen and (max-width: 800px) {
+	.footer-social {
+		float:none;
+		text-align:center;
+	}
+}
+
+@media only screen and (max-width: 700px) {
+	.slider-selector {
+		width:65%;
+	}
+}
+
+@media only screen and (max-width: 630px) {
+	.slider-content {
+		float:none;
+		margin-top:15%;
+
+		h2 {
+			width:100%;
+			font-size: 3em;
+			line-height: 1em;
+			text-align: center;
+		}
+
+		p {
+			text-align: center;
+			padding-top: 40px;
+		}
+	}
+
+	.slider-selector {
+		float:none;
+		width: 100%;
+		margin-left:15px;
+	}
+
+	.arrow {
+		margin: 0 40%;
+		margin-top:30px;
+	}
+
+	.titulo-section {
+		font-size: 3em;
+		text-align: center;
+	}
+
+	.sobre-card {
+		margin-top: 40px;
+
+		.card-desc	{
+			text-align: center;
+		}
+	}
+
+	.hover-inativo {
+		opacity: 1;
+	}
+
+	#contato {
+
+		.titulo-section {
+			width: 100%;
+		}
+	}
+
+	.input-wrap {
+		width: 90%;
+
+		.btn-cont {
+			margin-bottom: 100px;
+		}
+	}
+
+	.footer-menu {
+		display:inline-block;
+		margin-bottom: 10px;
+		width: 100%;
+		li {
+			width: 90%;
+			padding: 20px 0;
+			a {
+				font-size: 1.6em;
+			}
+		}
+	}
+
+	.footer-social {
+		width: 90%;
+	}
+}

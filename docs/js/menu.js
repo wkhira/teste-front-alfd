@@ -1,0 +1,1 @@
+function menuResponsivo(){var n=$(".menu-abrir"),e=$(document.documentElement);n.click(function(){e.addClass("menu-ativo")}),e.click(function(n){n.target===document.documentElement&&e.removeClass("menu-ativo")})}$(function(){menuResponsivo()});

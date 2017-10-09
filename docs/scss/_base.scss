@@ -1,0 +1,97 @@
+/* Colors */
+$lime: #bbe902;
+$white: #f4f4f4;
+$grey: #f0f0f0;
+$brown: #4e442e;
+$dgrey: #4a4141;
+
+/* roboto-condensed-300 - latin */
+@font-face {
+	font-family: 'Roboto Condensed';
+	font-style: normal;
+	font-weight: 300;
+	src: url('../assets/fonts/roboto-condensed-v14-latin-300.eot'); /* IE9 Compat Modes */
+	src: local('Roboto Condensed Light'), local('RobotoCondensed-Light'),
+	url('../assets/fonts/roboto-condensed-v14-latin-300.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../assets/fonts/roboto-condensed-v14-latin-300.woff2') format('woff2'), /* Super Modern Browsers */
+	url('../assets/fonts/roboto-condensed-v14-latin-300.woff') format('woff'), /* Modern Browsers */
+	url('../assets/fonts/roboto-condensed-v14-latin-300.ttf') format('truetype'), /* Safari, Android, iOS */
+	url('../assets/fonts/roboto-condensed-v14-latin-300.svg#RobotoCondensed') format('svg'); /* Legacy iOS */
+}
+
+/* roboto-condensed-700 - latin */
+@font-face {
+	font-family: 'Roboto Condensed';
+	font-style: normal;
+	font-weight: 700;
+	src: url('../assets/fonts/roboto-condensed-v14-latin-700.eot'); /* IE9 Compat Modes */
+	src: local('Roboto Condensed Bold'), local('RobotoCondensed-Bold'),
+	url('../assets/fonts/roboto-condensed-v14-latin-700.eot?#iefix') format('embedded-opentype'), /* IE6-IE8 */
+	url('../assets/fonts/roboto-condensed-v14-latin-700.woff2') format('woff2'), /* Super Modern Browsers */
+	url('../assets/fonts/roboto-condensed-v14-latin-700.woff') format('woff'), /* Modern Browsers */
+	url('../assets/fonts/roboto-condensed-v14-latin-700.ttf') format('truetype'), /* Safari, Android, iOS */
+	url('../assets/fonts/roboto-condensed-v14-latin-700.svg#RobotoCondensed') format('svg'); /* Legacy iOS */
+}
+
+/* Arial Black */
+@font-face {
+	font-family: 'Arial Black';
+	font-weight: 900;
+	font-style: normal;
+	src: url('../assets/fonts/Arial-Black.eot');
+	src: url('../assets/fonts/Arial-Black.eot?#iefix') format('embedded-opentype'),
+	url('../assets/fonts/Arial-Black.woff2') format('woff2'),
+	url('../assets/fonts/Arial-Black.woff') format('woff'),
+	url('../assets/fonts/Arial-Black.ttf') format('truetype'),
+	url('../assets/fonts/Arial-Black.svg#Arial-Black') format('svg');
+}
+
+/* Arial Narrow */
+@font-face {
+	font-family: 'Arial Narrow';
+	font-weight: normal;
+	font-style: normal;
+	src: url('../assets/fonts/ArialNarrow.eot');
+	src: url('../assets/fonts/rialNarrow.eot?#iefix') format('embedded-opentype'),
+	url('../assets/fonts/ArialNarrow.woff2') format('woff2'),
+	url('../assets/fonts/ArialNarrow.woff') format('woff'),
+	url('../assets/fonts/ArialNarrow.ttf') format('truetype'),
+	url('../assets/fonts/ArialNarrow.svg#ArialNarrow') format('svg');
+}
+
+/* Alwyn */
+@font-face {
+	font-family: 'Alwyn';
+	font-weight: 300;
+	font-style: normal;
+	src: url('../assets/fonts/AlwynLight.eot');
+	src: url('../assets/fonts/AlwynLight.eot?#iefix') format('embedded-opentype'),
+	url('../assets/fonts/AlwynLight.woff2') format('woff2'),
+	url('../assets/fonts/AlwynLight.woff') format('woff'),
+	url('../assets/fonts/AlwynLight.ttf') format('truetype'),
+	url('../assets/fonts/AlwynLight.svg#AlwynLight') format('svg');
+}
+
+.bg-lime {
+	background-color: $lime;
+}
+
+.bg-grey {
+	background-color: $grey;
+}
+
+.bg-brown {
+	background-color: $brown;
+}
+
+.bg-dgrey {
+	background-color:$dgrey;
+}
+
+.titulo-section {
+	font-family: 'Arial Black', 'Arial', sans-serif;
+	font-size: 3.5em;
+	line-height: 0.9em;
+	color: $brown;
+	margin-top:50px;
+}

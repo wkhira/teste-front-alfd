@@ -1,0 +1,50 @@
+%fields {
+	padding: 20px 40px;
+	margin: 20px 0;
+	width:100%;
+	background: none;
+	border: 3px solid $white;
+	outline: none;
+}
+
+#contato {
+	.titulo-section {
+		line-height: 1em;
+		color: $white;
+	}
+
+	#cont-form {
+		margin-bottom: 80px;
+	}
+}
+
+.input-wrap {
+	width: 80%;
+	margin: 0 auto;
+	margin-top: 20px;
+	color: $white;
+
+	input {
+		@extend %fields;
+	}
+
+	textarea {
+		@extend %fields;
+		resize: none;
+		margin-bottom: 5px;
+	}
+
+	.btn-cont {
+		float:right;
+		padding: 10px 25px;
+		background: none;
+		border: 3px solid $white;
+		outline: none;
+		font-family: 'Arial', sans-serif;
+		font-size: 1.5em;
+		&:hover {
+			transform: translateY(1px);
+		}
+	}
+
+}
